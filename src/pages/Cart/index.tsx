@@ -61,7 +61,7 @@ const Cart = (): JSX.Element => {
             </td>
             <td>
               <strong>Tênis de Caminhada Leve Confortável</strong>
-              <span>R$ 179,90</span>
+              <span>R$ 113,90</span>
             </td>
             <td>
               <div>
