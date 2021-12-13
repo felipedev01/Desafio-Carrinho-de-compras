@@ -39,7 +39,7 @@ const Home = (): JSX.Element => {
 
   console.log(products)
   function handleAddProduct(id: number) {
-    // TODO
+    
   }
 
   return (
@@ -53,7 +53,7 @@ const Home = (): JSX.Element => {
 <button
   type="button"
   data-testid="add-product-button"
-// onClick={() => handleAddProduct(product.id)}
+onClick={() => handleAddProduct(prod.id)}
 >
   <div data-testid="cart-product-quantity">
     <MdAddShoppingCart size={16} color="#FFF" />
