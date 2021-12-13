@@ -32,14 +32,15 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
     return [];
   }
-  
-  );
 
+  );
+ 
  
 
   const addProduct = async (productId: number) => {
     try {
-      // TODO
+     const updatedCart = [...cart]
+     const productExist = updatedCart.find(product=> product.id===productId)
     } catch {
       // TODO
     }
