@@ -39,7 +39,7 @@ const Home = (): JSX.Element => {
 
   console.log(products)
   function handleAddProduct(id: number) {
-    
+    addProduct(id)
   }
 
   return (
