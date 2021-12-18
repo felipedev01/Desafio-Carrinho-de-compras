@@ -39,7 +39,7 @@ const Cart = (): JSX.Element => {
   }
 
   function handleRemoveProduct(productId: number) {
-    // TODO
+    // removeProduct()
   }
 
   return (
@@ -95,7 +95,7 @@ const Cart = (): JSX.Element => {
               <button
                 type="button"
                 data-testid="remove-product"
-              // onClick={() => handleRemoveProduct(product.id)}
+             // onClick={() => handleRemoveProduct(product.id)}
               >
                 <MdDelete size={20} />
               </button>
