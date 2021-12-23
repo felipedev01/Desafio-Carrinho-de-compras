@@ -1,4 +1,5 @@
 import React from 'react';
+import { useCart } from '../../hooks/useCart';
 import {
   MdDelete,
   MdAddCircleOutline,
@@ -18,7 +19,7 @@ interface Product {
 }
 
 const Cart = (): JSX.Element => {
-  // const { cart, removeProduct, updateProductAmount } = useCart();
+  const { cart, removeProduct, updateProductAmount } = useCart();
 
   // const cartFormatted = cart.map(product => ({
   //   // TODO
@@ -39,7 +40,7 @@ const Cart = (): JSX.Element => {
   }
 
   function handleRemoveProduct(productId: number) {
-    // removeProduct()
+     removeProduct(productId)
   }
 
   return (
@@ -95,7 +96,7 @@ const Cart = (): JSX.Element => {
               <button
                 type="button"
                 data-testid="remove-product"
-             // onClick={() => handleRemoveProduct(product.id)}
+            // onClick={() => handleRemoveProduct(product.id)}
               >
                 <MdDelete size={20} />
               </button>
